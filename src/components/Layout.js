@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import PropTypes from 'prop-types';
 import Header from "./Header";
 import ThemeContext from "../contexts/themeContext";
 
@@ -15,6 +16,10 @@ const Layout = ({ children }) => {
       {children}
     </>
   )
+}
+
+Layout.propTypes = {
+  children: PropTypes.any
 }
 
 export default Layout;

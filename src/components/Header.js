@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Form, Navbar, FormControl, Button } from "react-bootstrap";
+import { Navbar } from "react-bootstrap";
 import ThemeContext from "../contexts/themeContext";
 import ThemeSwitcher from "./ThemeSwitcher";
 

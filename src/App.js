@@ -1,4 +1,5 @@
-import { Children, useState } from "react";
+import React, { Children, useState } from "react";
+import PropTypes from 'prop-types';
 import {
   Switch,
   Route,
@@ -13,7 +14,7 @@ import About from './pages/about/About';
 import './App.css';
 
 
-function App() {
+const App = () => {
 
   const [theme, setTheme] = useState("light")
   const value = { theme, setTheme }
@@ -49,6 +50,10 @@ const PrivateRoute = ({path}) => {
   return (
     <Route path={path}>{Children}</Route>
   )
+}
+
+PrivateRoute.propTypes = {
+  path: PropTypes.string
 }
 
 export default App;
