@@ -1,0 +1,87 @@
+.header-container {
+  background-image: url(../assets/images/BG.png);
+  height: 850px;
+  background-size: contain;
+  
+  .header {
+    flex: 1;
+    display: inline-flex;
+    width: 100%;
+
+    .header-logo {
+      display: flex;
+      height: 80px;
+      padding-left: 80px;
+      align-items: center;
+    }
+
+    .header-tabs {
+      display: flex;
+      margin-left: 200px;
+      margin-top: 30px;
+      
+      @media screen and (max-width: 1280px) {
+        margin-left: 140px;
+      }
+
+      .header-tab-item {
+        margin-left: 40px;
+        font-family: Proxima Nova;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 100%;
+        color: #FFFFFF;
+        opacity: 0.5;
+        height: 32px;
+
+        &.active {
+          opacity: 1;
+          border-bottom: 2px solid orange;
+        }
+
+        &:hover {
+          border-bottom: 2px solid #FFFFFF;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .header-buttons {
+      margin-left: 164px;
+      margin-top: 30px;
+      display: flex;
+
+      @media screen and (max-width: 1280px) {
+        margin-left: 104px;
+      }
+
+      .header-button-login {
+        font-family: Proxima Nova;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+
+      .header-button-join {
+        width: 148px;
+        text-align: center;
+        height: 35px;
+        background-color: #F09B00;
+        border-radius: 100px;
+        margin-top: -8px;
+        margin-left: 26px;
+        border-width: 0px;
+
+        font-family: Proxima Nova;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+  }
+}

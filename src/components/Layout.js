@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import PropTypes from 'prop-types';
 import Header from "./Header";
+import Footer from "./Footer";
 import ThemeContext from "../contexts/themeContext";
 
 const Layout = ({ children }) => {
@@ -14,6 +15,7 @@ const Layout = ({ children }) => {
       <style>{bg}</style>
       <Header />
       {children}
+      <Footer />
     </>
   )
 }

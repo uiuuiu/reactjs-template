@@ -1,0 +1,258 @@
+.home {
+    .home-introduction-container {
+        top: 80px;
+        width: 100%;
+        height: 770px;
+        // background-color: red;
+        position: absolute;
+    
+        .home-introduction-panel {
+            position: absolute;
+            top: 103px;
+            left: 160px;
+            height: 500px;
+            width: 500px;
+    
+            .home-introduction-slogan {
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: #FFE9C3;
+            }
+    
+            .home-introduction-title {
+                font-family: Kazimir;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 70px;
+                line-height: 100px;
+                color: #FFFFFF;
+            }
+    
+            .home-introduction-content {
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 22px;
+                color: #FFFFFF;
+                opacity: 0.75;
+            }
+    
+            .home-introduction-buttons {
+                margin-top: 20px;
+    
+                *:not(:first-child) {
+                    margin-left: 10px;
+                }
+    
+                .home-introduction-try-button {
+                    width: 177px;
+                    height: 43px;
+                    background: #F36328;
+                    border-radius: 100px;
+                    font-family: Proxima Nova;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 19px;
+                    border-width: 0px;
+
+                    &:hover {
+                        background-color: #FFFFFF;
+                        color: #F36328;
+                    }
+                }
+    
+                .home-introduction-pricing-button {
+                    width: 177px;
+                    height: 43px;
+                    background: transparent;
+                    border-radius: 100px;
+                    font-family: Proxima Nova;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 19px;
+                    border: 1px solid #FFFFFF;
+    
+                    &:hover {
+                        background-color: #FFFFFF;
+                        border-width: 0px;
+                        color: #46608A;
+                    }
+                }
+            }
+        }
+    }
+
+    .home-business-plan-container {
+        width: 100%;
+        height: 1018px;
+        background-image: url(../../assets/images/home-business-plan.png);
+        background-size: contain;
+    }
+
+    .home-founder-container {
+        width: 100%;
+        height: 596px;
+        background-image: url(../../assets/images/founder.png);
+        background-size: contain;
+        background-origin: content-box;
+        padding: 5px;
+    }
+
+    .home-pricing-container {
+        width: 100%;
+        height: 906px;
+        background-image: url(../../assets/images/pricing.png);
+        background-size: contain;
+        background-origin: content-box;
+        position: relative;
+
+        .home-pricing-panel {
+            position: absolute;
+            height: 572px;
+            top: 275px;
+            margin-left: auto; 
+            margin-right: auto; 
+            display: flex;
+            left: 0;
+            right: 0;
+            justify-content: center;
+
+            .home-pricing-item {
+                height: 572px;
+                width: 320px;
+                background-size: contain;
+                background-origin: content-box;
+                background-repeat: no-repeat;
+                display: flex;
+                justify-content: center;
+
+                &:not(:first-child) {
+                    margin-left: 30px;
+                }
+
+                &:first-child {
+                    background-image: url(../../assets/images/pricing-standard.png);
+
+                    .home-pricing-button {
+                        border: 2px solid #F36328;
+                        color: #F36328;
+                    }
+                }
+
+                &:nth-child(2) {
+                    background-image: url(../../assets/images/pricing-starter.png);
+
+                    .home-pricing-button {
+                        border: 2px solid #F09B00;
+                        color: #F09B00;
+                    }
+                }
+
+                &:nth-child(3) {
+                    background-image: url(../../assets/images/pricing-pro.png);
+
+                    .home-pricing-button {
+                        border: 2px solid #46608A;
+                        color: #46608A;
+                    }
+                }
+
+                .home-pricing-button {
+                    position: absolute;
+                    bottom: 110px;
+                    width: 248px;
+                    height: 48px;
+                    background-color: transparent;
+                    border-radius: 100px;
+                    font-family: Proxima Nova;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 19px;
+
+                    &:hover {
+                        background-color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+
+    .home-services-container {
+        width: 100%;
+        height: 596px;
+        background-image: url(../../assets/images/home-services.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .home-final-container {
+        width: 100%;
+        height: 648px;
+        background-image: url(../../assets/images/home-final.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 87px;
+        position: relative;
+
+        .home-final-content{
+            padding-top: 126px;
+            padding-left: 100px;
+            height: 300px;
+            width: 320px;
+
+            .home-final-content-title {
+                width: 269px;
+                font-family: KazimirText;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 60px;
+                line-height: 70px;
+                color: #FFFFFF;
+            }
+
+            .home-final-content-description {
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 22px;
+                color: #FFFFFF;
+                opacity: 0.75;
+            }
+
+            .home-final-content-button {
+                width: 316px;
+                height: 54px;
+                background: #F36328;
+                border-radius: 100px;
+                border-width: 0px;
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 24px;
+                color: #FFFFFF;
+
+                &:hover {
+                    background: #FFFFFF;
+                    color: #F36328;
+                }
+            }
+        }
+
+        .home-final-dashboard-image {
+            position: absolute;
+            right: 44px;
+            bottom: 80px;
+        }
+    }
+}
